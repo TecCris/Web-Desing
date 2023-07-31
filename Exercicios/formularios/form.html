@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Formulário</title>
+
+    <style>
+        form{
+            display: flex;
+        }
+        textarea{
+            resize: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Introdução</legend>
+            
+            <label>Email</label>
+            <input type="email" name="email" maxlength="10" placeholder="digite um email válido">
+            <br><br>
+            <label for="idade">Qual a sua idade?</label>
+            <br>
+            <input type="number" id="idade" min="0" max="100">
+            <br><br>
+            <label for="">Data de nascimento</label>
+            <br>
+            <input type="date" max="2006-01-01">
+            <br><br>
+            <label for="">Possui carteira assinada?</label>
+            <br>
+            <label>
+            <input type="radio" name="CLT" value="s">Sim
+            </label>
+            <label>
+            <input type="radio" name="CLT" value="n">Não
+            <br>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Area de interesse</legend>
+    
+            <label>
+            <input type="checkbox" name="interesse" value="html">HTML</label>
+            <label>
+            <input type="checkbox" name="interesse" value="css">CSS</label>
+            <label>
+            <input type="checkbox" name="interesse" value="js">Javascript</label>
+            <label>
+            <input type="checkbox" name="interesse" value="python">Python</label>
+            <label>
+            <input type="checkbox" name="interesse" value="java">Java</label>
+
+            <br>
+            <br>
+
+            <label>Escolha uma linguagem
+            <br>
+                <select name="linguagem" required>
+                    <option value="">Selecione uma</option>
+
+                    <optgroup label="frontend">
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="js">Javascript</option>
+                    </optgroup> <label></label>
+
+                    <optgroup label="backend">
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                    </optgroup>
+                </select>
+                <br><br>
+                <input type="text" list="linguagemList">
+                <datalist id="linguagemList">
+                    <option value="html">
+                    <option value="CSS">
+                    <option value="Javascript">
+                    <option value="Java">
+                    <option value="Python">
+                    <option value="PHP">
+                </datalist>
+                <br><br>
+                <input type="file">
+            </label>
+
+        </fieldset>
+        <fieldset>
+            <legend>Mensagem</legend>
+            <textarea name="msg" cols="26" rows="6"></textarea>
+            <br>
+             <textarea cols="26" rows="6" disabled>
+CONTRATO
+1.1 REGRA 1
+1.2 REGRA 2
+            </textarea>
+            <label>
+                <input type="checkbox" required>Li e aceito o contrato
+            </label>
+        </fieldset>
+        <input type="submit" value="enviar" class="bt">
+    </form>
+    <br>
+    
+</body>
+</html>

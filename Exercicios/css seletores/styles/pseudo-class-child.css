@@ -1,0 +1,27 @@
+p:first-child{
+    color: #ff0000;
+}
+
+p:last-child{
+    color: #ffa500;
+}
+
+p:nth-child(1){
+    background-color: #ccc;
+}
+
+p:first-of-type{
+    background-color: brown;
+}
+
+p:last-of-type{
+    background-color: cadetblue;
+}
+
+p:nth-of-type(2){
+    border: solid #7fff00;
+}
+
+li:nth-child(odd){
+    background-color: #ff5c77;
+}

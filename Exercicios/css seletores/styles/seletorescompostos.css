@@ -1,0 +1,19 @@
+article{
+    outline: 1px solid rgb(63, 207, 6)
+}
+
+article a{
+    color:red;
+}
+
+article a>b{
+    color: green;
+}
+
+h3 + p{
+    background-color: aqua;
+}
+
+hr ~ p{
+    border: 1px dashed blueviolet;
+}

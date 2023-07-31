@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Listas aninhadas</title>
+
+    <style>
+      body{
+        font-family: sans-serif;
+      }
+
+      table{
+        width: 80%;
+        margin: auto;
+        background-color:bisque;
+        border-collapse: collapse;
+      }
+      
+      th{
+        background-color: rgb(224, 197, 163);
+        border: 2px solid rgb(178, 148, 111);
+      padding: 16px;
+      }
+
+      td{
+        border: 1px solid black;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+</head>
+
+<body>
+
+  <table>
+    <caption>Tabela de preços de cursos</caption>
+
+    <thead>
+      <tr>
+        <th>Área</th>
+        <th>Curso</th>
+        <th>Investimento</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td rowspan="3">Desing</td>
+        <td>InDesing</td>
+        <td>R$ 1.000,00</td>
+      </tr>
+
+      <tr>
+        <td>Photoshop</td>
+        <td>R$ 1.500,00</td>
+      </tr>
+
+      <tr>
+        <td>Ilustrator</td>
+        <td>R$ 1.200,00</td>
+      </tr>
+
+      <tr>
+        <td rowspan="4">Development</td>
+        <td>HTML</td>
+        <td>R$ 1.000,00</td>
+      </tr>
+
+      <tr>
+        <td>CSS</td>
+        <td>R$ 1.000,00</td>
+      </tr>
+
+      <tr>
+        <td>Javascript</td>
+        <td>R$ 1.000,00</td>
+      </tr>
+
+      <tr>
+        <td>PHP</td>
+        <td>R$ 1.000,00</td>
+      </tr>
+
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">Valores sujeitos a alteração</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

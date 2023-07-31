@@ -1,0 +1,16 @@
+ a[target="_blank"]::after{
+    content: "Depois ";
+ }
+
+ a[href$="pdf"]::after{
+    content: " Depois";
+ }
+
+ input[type="checkbox"]:checked+label{
+    color: green;
+ }
+
+ input[type="checkbox"]+label{
+    color: red;
+ }
+

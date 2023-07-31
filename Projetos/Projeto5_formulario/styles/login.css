@@ -1,0 +1,101 @@
+:root{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    background-image: url(/ProjetoConto/princesas/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fd007ec5;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.form{
+    width: 80%;
+    max-width: 32rem;
+    /* background-color: white; */
+    /* outline: 10px solid rgba(0, 0, 0, .2); */
+    background-image: linear-gradient(to right, #e2008029 .5rem, #ffffff .5rem);
+}
+
+.form__fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: .25em;
+    padding: 2rem;
+}
+
+.form__title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+
+.form__label{
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.form__input{
+    padding: .5em 0;
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 1px solid #fd007ec5;
+    margin-bottom: .8rem;
+    outline: none;
+    transition: padding-left .08s;
+}
+
+.form__input:focus{
+    outline: 1px solid #fd007e38;
+    padding-left: .3rem;
+}
+
+.btn{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: .8rem 1.2rem;
+    text-decoration: none;
+}
+
+.btn1{
+    background-color:#fd007ec5;
+    color: white;
+}
+
+.btn2{
+    color:#fd007ec5;
+}
+.form__action{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.form__action__aside{
+    font-size: .85rem;
+    flex-grow: 1;
+    text-align: right;
+    text-decoration: none;
+}
+
+.form__action__aside a{
+    text-decoration: none;
+    color:inherit;
+}
+

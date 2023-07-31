@@ -1,0 +1,77 @@
+:root{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    background-color: rgba(19, 19, 19, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+form{
+    width: 90%;
+    min-width: 28.125em;
+    max-width: 35em;
+    background-color: #1f262c;
+    padding: 1em;
+    box-shadow: 0 5px 12px 10px rgba(0, 0, 0, 1);
+}
+
+fieldset{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+label,
+input,
+textarea{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input, textarea{
+    background-color: rgba(0, 0, 0, .3);
+    border: 2px solid transparent;
+    border-bottom-color: rgba(203, 227, 0, 1);
+    padding: .75em;
+    margin: .5em 0 2.5em;
+    color: white;
+}
+
+input:focus, textarea:focus{
+    background-color: rgba(255, 255, 255, .2);
+    color: rgba(0, 0, 0, 1);
+    outline: 0;
+}
+input:valid:focus, textarea:valid:focus{
+    border-bottom: 2px solid rgba(203, 227, 0, 1);
+}
+
+input:invalid:focus, textarea:invalid:focus{
+    border-bottom: 2px solid rgba(206, 0, 0, 1);
+}
+
+legend{
+    padding: .5em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.btn{
+    background-color: rgba(203, 227, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    padding: .7em;
+    font-size: 1.2em;
+}
